@@ -1,4 +1,4 @@
-import React, { MouseEventHandler } from "react"
+import React, { ButtonHTMLAttributes, MouseEventHandler } from "react"
 import styled, { DefaultTheme } from "styled-components"
 import { dangerTheme, primaryTheme, secondaryTheme, theme } from "../themes"
 
@@ -73,9 +73,11 @@ interface ButtonProps extends CustomButtonProps {
   text?: string
   startIcon?: string
   endIcon?: string
+  attributes?: ButtonHTMLAttributes<HTMLButtonElement>
 }
 const Button = (props: ButtonProps): JSX.Element => {
   const {
+    attributes,
     onClick,
     disabled,
     color,
@@ -127,6 +129,7 @@ const Button = (props: ButtonProps): JSX.Element => {
       disableShadow={disableShadow}
       disabled={disabled}
       size={size}
+      {...attributes}
     >
       {renderText(text, startIcon, endIcon)}
     </CustomButton>

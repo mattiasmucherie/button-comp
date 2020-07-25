@@ -81,6 +81,12 @@ function App() {
         </ButtonContainer>
         <ButtonContainer>
           <pre>
+            <Code>{`<Button attributes={{autoFocus: true}}/>`}</Code>
+          </pre>
+          <Button attributes={{ autoFocus: true }} />
+        </ButtonContainer>
+        <ButtonContainer>
+          <pre>
             <Code>{`<Button disableShadow />`}</Code>
           </pre>
           <Button text="Default" disableShadow />
