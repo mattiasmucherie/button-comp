@@ -1,4 +1,4 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from "styled-components"
 
 export const theme: DefaultTheme = {
   main: {
@@ -14,7 +14,7 @@ export const theme: DefaultTheme = {
       color: "#3D5AFE",
     },
   },
-};
+}
 
 export const primaryTheme: DefaultTheme = {
   main: {
@@ -30,7 +30,7 @@ export const primaryTheme: DefaultTheme = {
       color: "#3D5AFE",
     },
   },
-};
+}
 export const secondaryTheme: DefaultTheme = {
   main: {
     color: {
@@ -45,7 +45,7 @@ export const secondaryTheme: DefaultTheme = {
       color: "#455A64",
     },
   },
-};
+}
 export const dangerTheme: DefaultTheme = {
   main: {
     color: {
@@ -60,4 +60,4 @@ export const dangerTheme: DefaultTheme = {
       color: "#D32F2F",
     },
   },
-};
+}
