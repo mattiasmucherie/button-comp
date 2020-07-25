@@ -3,7 +3,7 @@ import Button from "./component/Button"
 import styled from "styled-components"
 
 const Container = styled.div`
-  margin: 2rem 2rem;
+  padding: 2rem;
 `
 const Grid = styled.div`
   display: grid;
@@ -16,11 +16,18 @@ const Grid = styled.div`
 `
 const ButtonContainer = styled.div`
   overflow: scroll;
-  max-width: 300px;
+  max-width: 290px;
 `
 const Code = styled.code`
   font-family: Ubuntu, Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 12px;
+`
+const Link = styled.a`
+  color: #7f5af0;
+  text-decoration: none;
+  &:hover {
+    color: #2cb67d;
+  }
 `
 const TitleContainer = styled.div`
   display: flex;
@@ -37,32 +44,32 @@ function App() {
         <h1>Button Component</h1>
         <p>
           A reusable Button component. The challenge description can be found{" "}
-          <a
+          <Link
             href="https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY"
             target="_blank"
             rel="noopener noreferrer"
           >
             here
-          </a>
+          </Link>
           .<br />
           This is best view on a desktop to see the hover effects.
           <br />
           Created by{" "}
-          <a
+          <Link
             href="https://mattiasmucherie.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Mattias Mucherie{" "}
-          </a>{" "}
+          </Link>{" "}
           and the source can be seen{" "}
-          <a
+          <Link
             href="https://github.com/mattiasmucherie/button-comp"
             target="_blank"
             rel="noopener noreferrer"
           >
             here
-          </a>
+          </Link>
         </p>
       </TitleContainer>
       <Grid>
