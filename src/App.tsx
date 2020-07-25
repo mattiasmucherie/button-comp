@@ -29,17 +29,40 @@ const TitleContainer = styled.div`
   padding: 2rem 0;
   text-align: center;
 `
-const Title = styled.h1``
 
 function App() {
   return (
     <Container>
       <TitleContainer>
-        <Title>Button Component</Title>
+        <h1>Button Component</h1>
         <p>
           A reusable Button component. The challenge description can be found{" "}
-          <a href={"https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY"}>here</a>. This is best view on a desktop
-          to see the hover effects.
+          <a
+            href="https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>
+          .<br />
+          This is best view on a desktop to see the hover effects.
+          <br />
+          Created by{" "}
+          <a
+            href="https://mattiasmucherie.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mattias Mucherie{" "}
+          </a>{" "}
+          and the source can be seen{" "}
+          <a
+            href="https://github.com/mattiasmucherie/button-comp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>
         </p>
       </TitleContainer>
       <Grid>
@@ -72,6 +95,12 @@ function App() {
             <Code>{`<Button variant="text" />`}</Code>
           </pre>
           <Button variant="text" />
+        </ButtonContainer>
+        <ButtonContainer>
+          <pre>
+            <Code>{`<Button variant="text" disabled />`}</Code>
+          </pre>
+          <Button variant="text" disabled />
         </ButtonContainer>
         <ButtonContainer>
           <pre>
