@@ -38,7 +38,8 @@ function App() {
         <Title>Button Component</Title>
         <p>
           A reusable Button component. The challenge description can be found{" "}
-          <a href={"https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY"}>here</a>. This is best view on a desktop to see the hover effects.
+          <a href={"https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY"}>here</a>. This is best view on a desktop
+          to see the hover effects.
         </p>
       </TitleContainer>
       <Grid>
