@@ -75,19 +75,18 @@ interface ButtonProps extends CustomButtonProps {
   endIcon?: string
   attributes?: ButtonHTMLAttributes<HTMLButtonElement>
 }
-const Button = (props: ButtonProps): JSX.Element => {
-  const {
-    attributes,
-    onClick,
-    disabled,
-    color,
-    text,
-    startIcon,
-    endIcon,
-    variant,
-    disableShadow,
-    size,
-  } = props
+const Button = ({
+  attributes,
+  onClick,
+  disabled,
+  color,
+  text,
+  startIcon,
+  endIcon,
+  variant,
+  disableShadow,
+  size,
+}: ButtonProps): JSX.Element => {
   const getTheme = (buttonColor: string | undefined): DefaultTheme => {
     if (buttonColor === "primary") return primaryTheme
     if (buttonColor === "secondary") return secondaryTheme
